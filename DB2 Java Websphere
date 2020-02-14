@@ -6,3 +6,16 @@ Error: DB2 SQL Error: SQLCODE=-727, SQLSTATE=56098,
 SQLERRMC=2;-204;42704;DB2ADMIN.KOKOT, DRIVER=3.50.152
 SQLState: 56098
 ErrorCode: -727
+
+
+
+$data = $database->getData(); // returns array ['id' => 'row']
+
+if (count($data) > 0) {
+    $dataGet = $database->getData(); // returns same data
+}
+
+foreach ($dataGet as $id => $row) {
+    $rowData = $data[$row->id];
+    // some operations with $rowData
+}
