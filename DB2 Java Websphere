@@ -6,3 +6,13 @@ Error: DB2 SQL Error: SQLCODE=-727, SQLSTATE=56098,
 SQLERRMC=2;-204;42704;DB2ADMIN.KOKOT, DRIVER=3.50.152
 SQLState: 56098
 ErrorCode: -727
+org.eclipse.jst.j2ee.commonarchivecore.internal.exception.DeploymentDesc
+riptorLoadException:
+META-INF/ejb-jar.xml
+Stack trace of nested exception:
+java.lang.NullPointerException
+at
+org.eclipse.emf.common.util.BasicEList.getNonDuplicates(BasicEList.java:
+1904)
+at
+org.eclipse.emf.common.util.BasicEList.addAll(BasicEList.java:686)
